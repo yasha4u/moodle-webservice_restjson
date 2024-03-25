@@ -32,6 +32,7 @@ define('WS_SERVER', true);
 
 require('../../config.php');
 require_once("$CFG->dirroot/webservice/restjson/locallib.php");
+require_once($CFG->libdir . '/externallib.php');
 
 if (!webservice_protocol_is_enabled('restjson')) {
     header("HTTP/1.0 403 Forbidden");
